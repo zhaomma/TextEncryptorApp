@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本加密解密工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>文本加密解密工具</h1>
+        
+        <div class="input-section">
+            <label for="input-text">输入文本：</label>
+            <textarea id="input-text" placeholder="请输入要加密或解密的文本..."></textarea>
+        </div>
+        
+        <div class="input-section">
+            <label for="key-input">密钥：</label>
+            <input type="text" id="key-input" placeholder="请输入密钥" value="0000">
+        </div>
+        
+        <div class="algorithm-section">
+            <label for="algorithm-select">选择算法：</label>
+            <select id="algorithm-select">
+                <option value="base64">Base64</option>
+                <option value="vigenere">维吉尼亚密码</option>
+                <option value="xor" selected>异或加密</option>
+            </select>
+        </div>
+        
+        <div class="button-section">
+            <button id="encrypt-btn" class="primary-btn">加密</button>
+            <button id="decrypt-btn" class="primary-btn">解密</button>
+            <button id="copy-btn">复制结果</button>
+            <button id="clear-btn">清空</button>
+        </div>
+        
+        <div class="output-section">
+            <label for="output-text">结果：</label>
+            <textarea id="output-text" readonly placeholder="处理结果将显示在这里..."></textarea>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
