@@ -1,0 +1,163 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题样式 */
+ h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* 输入区域样式 */
+.input-section,
+.algorithm-section,
+.output-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+textarea,
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* 密钥输入框样式 */
+#key-input {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* 其他文本输入框样式 */
+textarea {
+    height: 150px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* 焦点状态样式 */
+textarea:focus,
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* 按钮区域样式 */
+.button-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 按钮基础样式 */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* 主要按钮样式 */
+.primary-btn {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+}
+
+/* 加密按钮特定样式 */
+#encrypt-btn {
+    background-color: #3498db;
+}
+
+#encrypt-btn:hover {
+    background-color: #2980b9;
+}
+
+/* 解密按钮特定样式 */
+#decrypt-btn {
+    background-color: #27ae60;
+}
+
+#decrypt-btn:hover {
+    background-color: #229954;
+}
+
+/* 其他按钮样式 */
+#copy-btn,
+#clear-btn {
+    background-color: #95a5a6;
+    color: white;
+}
+
+#copy-btn:hover,
+#clear-btn:hover {
+    background-color: #7f8c8d;
+}
+
+/* 输出区域样式 */
+#output-text {
+    background-color: #f8f9fa;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .primary-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    button {
+        flex: 1;
+        min-width: calc(50% - 5px);
+    }
+}
